@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Registration Form</title>
+  </head>
+  <body class="body-2">
+    <header>
+      <div class="c-card-container">
+        <a href="#" aria-label="Axia logo">
+          <img src="./logo-84d8fcb0.svg" alt="Axia logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html" class="nav-links hover-links">Home</a>
+            </li>
+            <li><a href="#" class="nav-links hover-links">About</a></li>
+            <li><a href="#" class="nav-links hover-links">Courses</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="c-class-container-2">
+        <div class="head-group">
+          <h1>axia registration form</h1>
+          <p>
+            Complete the form to register for your desired course and begin your
+            tech journey
+          </p>
+        </div>
+        <form action="#">
+          <fieldset>
+            <legend>Biodata</legend>
+            <div class="label-input">
+              <label for="full-name" class="span-required">
+                <span class="required">*</span> <span>Full Name</span></label
+              >
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                placeholder="Surname First"
+                class="input-field"
+                required
+                autocomplete="on"
+              />
+            </div>
+            <div class="label-input">
+              <label for="mail" class="span-required"
+                ><span class="required">*</span><span>Email</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="abc@xyz.com"
+                class="input-field"
+                required
+                autocomplete="on"
+              />
+            </div>
+            <div class="label-input">
+              <label for="phone" class="span-required"
+                ><span class="required">*</span><span>Phone Number</span></label
+              >
+              <input
+                type="tel"
+                name="number"
+                id="phone"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label for="dob" class="span-required"
+                ><span class="required">*</span
+                ><span>Date of Birth:</span></label
+              >
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label for="gender">Gender:</label>
+              <select name="gender" id="gender">
+                <option value="">--Select one--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="label-input">
+              <label for="address">Home Address:</label>
+              <textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="2"
+              ></textarea>
+            </div>
+            <div class="label-input">
+              <label for="zip-code">Zip Code:</label>
+              <input
+                type="text"
+                id="zip-code"
+                name="zip-code"
+                class="input-field"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Application Details</legend>
+            <div class="label-input">
+              <label for="course" class="span-required"
+                ><span class="required">*</span
+                ><span>Preferred Course</span></label
+              >
+              <select name="course" id="course" required>
+                <option value="">--Select one--</option>
+                <option value="Frontend Development">
+                  Frontend Development
+                </option>
+                <option value="Backend Development">Backend Development</option>
+                <option value="Fullstack Development">
+                  Fullstack Development
+                </option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Technical Writing">Technical Writing</option>
+              </select>
+            </div>
+            <div class="label-input">
+              <label for="duration">Preferred duration of study(months):</label>
+              <input
+                type="number"
+                id="duration"
+                name="duration"
+                min="4"
+                max="12"
+                class="input-field"
+              />
+            </div>
+            <div class="label-radio-input">
+              <p class="form-p">
+                Do you have prior knowledge in your desired field?
+              </p>
+              <div class="label-radio">
+                <label for="Prior-Knowledge">Yes</label>
+                <input
+                  type="radio"
+                  name="prior knowledge"
+                  value="Yes"
+                  id="Prior-Knowledge"
+                  checked
+                />
+              </div>
+              <div class="label-radio">
+                <label for="no-Prior-Knowledge">No</label>
+                <input
+                  type="radio"
+                  name="prior knowledge"
+                  value="Yes"
+                  id="no-Prior-Knowledge"
+                />
+              </div>
+            </div>
+            <div class="label-radio-input">
+              <p class="form-p">Do you have a laptop?</p>
+              <div class="label-radio">
+                <label for="laptop">Yes</label>
+                <input type="radio" name="laptop" id="laptop" checked />
+              </div>
+              <div class="label-radio">
+                <label for="no-laptop">No</label>
+                <input type="radio" name="laptop" id="no-laptop" />
+              </div>
+            </div>
+            <div class="label-radio-input">
+              <p class="form-p">
+                How did you hear about us? (Select all that applies)
+              </p>
+              <div class="label-radio">
+                <label for="Whatsapp">Whatsapp</label>
+                <input type="checkbox" name="info-source" id="Whatsapp" />
+              </div>
+              <div class="label-radio">
+                <label for="instagram">Instagram</label>
+                <input type="checkbox" name="info-source" id="instagram" />
+              </div>
+              <div class="label-radio">
+                <label for="facebook">facebook</label>
+                <input type="checkbox" name="info-source" id="facebook" />
+              </div>
+              <div class="label-radio">
+                <label for="twitter">Twitter</label>
+                <input type="checkbox" name="info-source" id="twitter" />
+              </div>
+              <div class="label-radio">
+                <label for="television">Television</label>
+                <input type="checkbox" name="info-source" id="television" />
+              </div>
+              <div class="label-input">
+                <label for="goal"
+                  >What are your goals after completing your course:</label
+                >
+                <textarea
+                  name="goal"
+                  id="goal"
+                  minlength="10"
+                  cols="30"
+                  rows="3"
+                  placeholder="In 10-50 words"
+                ></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Subscriptions</legend>
+            <div class="label-radio-input">
+              <p class="form-p">
+                Do you wish to receive our monthly newsletters in your mail?
+                (You can change your choice later)
+              </p>
+              <div class="label-radio">
+                <label for="newsletter">Yes</label>
+                <input
+                  type="radio"
+                  name="newsletter"
+                  value="Yes"
+                  id="newsletter"
+                />
+              </div>
+              <div class="label-radio">
+                <label for="no-newsletter">No</label>
+                <input
+                  type="radio"
+                  name="newsletter"
+                  value="Yes"
+                  id="no-newsletter"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <input type="submit" value="Submit Form" class="submit" />
+        </form>
+      </div>
+    </main>
+    <footer class="footer" aria-label="landing page footer">
+      <div class="c-card-container footer-1">
+        <div class="d-1">
+          <div class="footer__img-logo-links">
+            <img
+              src="./logo-84d8fcb0.svg"
+              alt=""
+              aria-hidden="true"
+              class="footer-logo"
+            />
+            <div class="links">
+              <h2 class="sr-only">Links</h2>
+              <a href="#" aria-label="FAQs" class="hover-links">FAQs</a>
+              <a href="#" aria-label="Contact us" class="hover-links"
+                >Contact Us</a
+              >
+              <a href="#" aria-label="Privacy Policy" class="hover-links"
+                >Privacy Policy</a
+              >
+              <a href="#" aria-label="Courses" class="hover-links">Courses</a>
+              <a href="#" aria-label="Blog" class="hover-links">Blog</a>
+              <a href="./index.html" aria-label="Register" class="hover-links"
+                >Home</a
+              >
+              <a href="#" aria-label="scholarship" class="hover-links"
+                >Apply for scholarship</a
+              >
+              <a href="#" aria-label="Apply to be a tutor" class="hover-links"
+                >Apply to be a tutor</a
+              >
+            </div>
+          </div>
+          <div class="social-media">
+            <h2 class="sr-only">Social Media Links</h2>
+            <a href="#" aria-label="Facebook">
+              <img src="./icon-facebook.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="./icon-twitter.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="./icon-instagram.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <p class="footer-attribution">
+          Coded by
+          <a href="https://github.com/repro123" class="hover-links"
+            >Dr Ibrahim Bello "Repro"</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
